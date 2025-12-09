@@ -1,3 +1,3 @@
-# LeetCode-Challanges
+# Coding Challanges
 
-This repo contains solved leetcode coding problems
+This repo contains solved coding problems
