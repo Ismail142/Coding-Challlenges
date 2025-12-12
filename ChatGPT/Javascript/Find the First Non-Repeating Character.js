@@ -1,16 +1,17 @@
 function firstUniqueChar(data){
-  uniqueCharMap = {};
+  //Map to count the frequency of each character
+  const uniqueCharMap = {};
 
-  for (i of data ) {
+  for (let i of data ) {
     uniqueCharMap[i] ? ++uniqueCharMap[i] : uniqueCharMap[i] = 1;
   };
 
-
-  for (i of data){
+  // find the first character with count 1
+  for (let i of data){
     if (uniqueCharMap[i]===1) return i;
   }
 
   return null
 }
 
-console.log(firstUniqueChar("1bbaa1c2d"));
+console.log(firstUniqueChar("leetcode"));
